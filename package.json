@@ -6,9 +6,24 @@
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/src/index.js",
-      "require": "./dist/src/index.js",
-      "types": "./dist/src/index.d.ts"
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./middlewares": {
+      "import": "./dist/middlewares/index.js",
+      "require": "./dist/middlewares/index.js",
+      "types": "./dist/middlewares/index.d.ts"
+    },
+    "./core": {
+      "import": "./dist/core/index.js",
+      "require": "./dist/core/index.js", 
+      "types": "./dist/core/index.d.ts"
+    },
+    "./util": {
+      "import": "./dist/util/index.js",
+      "require": "./dist/util/index.js",
+      "types": "./dist/util/index.d.ts"
     }
   },
   "files": [
