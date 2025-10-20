@@ -1,28 +1,34 @@
 {
+  // Visit https://aka.ms/tsconfig to read more about this file
   "compilerOptions": {
-    "target": "ES2020",
-    "module": "CommonJS",
-    "lib": ["ES2020"],
-    
+    // File Layout
     "rootDir": "./src",
     "outDir": "./dist",
-    
+
+    // Environment Settings
+    // See also https://aka.ms/tsconfig/module
+    "module": "nodenext",
+    "target": "esnext",
+    "types": ["node", "jest"],
+
+    // Other Outputs
+    "sourceMap": true,
     "declaration": true,
     "declarationMap": true,
-    "sourceMap": true,
-    
-    "moduleResolution": "node",
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    
-    "verbatimModuleSyntax": false,
-    
-    "strict": true,
+
+    // Stricter Typechecking Options
     "noUncheckedIndexedAccess": true,
     "exactOptionalPropertyTypes": true,
+    
+
+    // Recommended Options
+    "strict": true,
+    "jsx": "react-jsx",
+    "verbatimModuleSyntax": false,
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true,
 
     "paths": {
       "@/*": ["./src/*"],
@@ -34,14 +40,10 @@
       "@util/*": ["./src/util/*"]
     }
   },
-  "include": [
-    "src/**/*"
-  ],
   "exclude": [
     "dist",
     "node_modules",
     "**/*.test.ts",
     "**/*.spec.ts",
-    "**/__test__/**"
-  ]
+    "**/__test__/**"]
 }
