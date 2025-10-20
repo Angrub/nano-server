@@ -1,0 +1,20 @@
+{
+    "preset": "ts-jest",
+    "moduleNameMapper": {
+        "^@/(.*)$": "<rootDir>/src/$1",
+        "^@core$": "<rootDir>/src/core/index.ts",
+        "^@core/(.*)$": "<rootDir>/src/core/$1",
+        "^@middlewares$": "<rootDir>/src/middlewares/index.ts",
+        "^@middlewares/(.*)$": "<rootDir>/src/middlewares/$1",
+        "^@util$": "<rootDir>/src/util/index.ts",
+        "^@util/(.*)$": "<rootDir>/src/util/$1"
+    },
+    "coveragePathIgnorePatterns": [
+        "<rootDir>/dist/",
+        "<rootDir>/node_modules/"
+    ],
+    "testPathIgnorePatterns": [
+        "<rootDir>/dist/",
+        "<rootDir>/node_modules/"
+    ]
+}
