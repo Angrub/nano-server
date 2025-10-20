@@ -1,6 +1,6 @@
 {
   "name": "@angrub/nano-server",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A lightweight, high-performance Node.js framework for building web applications and APIs",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -17,7 +17,7 @@
     },
     "./core": {
       "import": "./dist/core/index.js",
-      "require": "./dist/core/index.js", 
+      "require": "./dist/core/index.js",
       "types": "./dist/core/index.d.ts"
     },
     "./util": {
