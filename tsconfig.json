@@ -41,6 +41,7 @@
     }
   },
   "exclude": [
+    "eslint.config.ts",
     "dist",
     "node_modules",
     "**/*.test.ts",
