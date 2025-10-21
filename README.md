@@ -23,7 +23,7 @@ npm install @angrub/nano-server
 ## Quick Start
 
 ```typescript
-import { NanoHttpServer, Router } from "nano-server";
+import { NanoHttpServer, Router } from "@angrub/nano-server";
 
 // Create server with configuration
 const app = new NanoHttpServer({
@@ -83,7 +83,7 @@ const app = new NanoHttpServer({
 ### Adding Custom Middlewares
 
 ```typescript
-import { INanoMiddleware, NanoCTX, NextFunction } from "nano-server";
+import { INanoMiddleware, NanoCTX, NextFunction } from "@angrub/nano-server";
 
 class CustomMiddleware implements INanoMiddleware {
 	async handle(ctx: NanoCTX, next: NextFunction) {
@@ -103,7 +103,7 @@ app.add(new CustomMiddleware());
 ## Routing
 
 ```typescript
-import { Router } from "nano-server";
+import { Router } from "@angrub/nano-server";
 
 const router = new Router();
 
@@ -165,7 +165,7 @@ router.get("/example", (ctx) => {
 ## Messaging (RabbitMQ)
 
 ```typescript
-import { MessagingService } from "nano-server/core/messaging";
+import { MessagingService } from "@angrub/nano-server";
 
 const messaging = new MessagingService({
 	url: "amqp://localhost:5672",
@@ -202,7 +202,7 @@ import {
 	BadRequestError,
 	NotFoundError,
 	UnauthorizedError,
-} from "nano-server";
+} from "@angrub/nano-server";
 
 const app = new NanoHttpServer({ logs: true });
 const router = new Router();
@@ -236,7 +236,7 @@ app.listen();
 ## Logging
 
 ```typescript
-import { Logger } from "nano-server";
+import { Logger } from "@angrub/nano-server";
 
 const logger = new Logger("App");
 
