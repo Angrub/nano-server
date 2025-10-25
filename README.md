@@ -1,5 +1,8 @@
 # Nano Server 🚀
 
+> 📝 **NOTE:**
+> This project is not intended to be a real production-ready framework. It was built for educational purposes, so I strongly recommend using popular, well-tested tools such as: [ExpressJs](https://expressjs.com/), [NestJs](https://nestjs.com/) or [Fastify](https://fastify.dev/).
+
 A lightweight, high-performance Node.js framework for building web applications and APIs with TypeScript support.
 
 ## Features
