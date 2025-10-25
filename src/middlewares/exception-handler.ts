@@ -31,6 +31,7 @@ export class ExceptionHandler implements INanoMiddleware {
 			this.ctx.response.setStatus(error.statusCode).json({
 				status: error.statusCode,
 				message: error.message,
+				detail: error.details
 			});
 
 			return;
