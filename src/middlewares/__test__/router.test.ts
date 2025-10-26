@@ -176,7 +176,7 @@ describe("Router", () => {
 			router.get("/resource", getHandler);
 			router.post("/resource", postHandler);
 			router.put("/resource", putHandler);
-			router.path("/resource", patchHandler);
+			router.patch("/resource", patchHandler);
 			router.delete("/resource", deleteHandler);
 
 			// Test GET
