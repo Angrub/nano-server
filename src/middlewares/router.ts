@@ -50,7 +50,7 @@ export class Router implements INanoMiddleware {
 		this.addRoute(HttpMethod.PUT, normalizedPath, handler);
 	}
 
-	public path(path: string, handler: RouteHandler) {
+	public patch(path: string, handler: RouteHandler) {
 		const normalizedPath = this.normalizePath(path);
 		this.addRoute(HttpMethod.PATCH, normalizedPath, handler);
 	}
