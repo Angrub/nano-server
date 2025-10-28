@@ -13,6 +13,7 @@ export class Logger {
 
     public error(message: string | unknown) {
         console.error(`${Colors.red}${Colors.bright}[${this.serviceName} ✗]:${Colors.reset} ${message}`);
+        console.error(message);
     }
 
     public info(message: string) {
